@@ -25,6 +25,17 @@ body{
     font-size: 14px;
     letter-spacing: 0.03em;
 }
+h1,h2,h3,h4,h5,h6,ul,p{
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1230px;
+    outline: 2px solid red; 
+}
 
 img {
     display: block
@@ -32,6 +43,8 @@ img {
 
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .link {
@@ -84,7 +97,35 @@ img {
 
 /* site-nav */
 
+.box{
+
+display: flex;
+width: 1230px;
+height: 80px;
+}
+
+
+.main-nav{
+    display: flex;
+}
+.contacts{
+    display: flex;
+}
+
+
+.site-nav{
+    display: flex;
+}
+
+.site-nav .item:not(:last-child){
+    margin-right: 50px;
+}
+
 .site-nav .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: #212121;
     text-decoration: none;
     font-family: 'Roboto';
@@ -103,7 +144,17 @@ img {
     color: var(--accent-color);
 }
 
+.auth-nav{
+    display:flex;
+}
+
+.auth-nav .item + .item{
+    margin-left: 50px;
+}
+
+
 .auth-nav-link{
+
     color: var(--primary-text-color);
     text-decoration: none;
     font-weight: 500;
@@ -119,9 +170,16 @@ img {
 
 /* hero */
 .hero{
+    margin-bottom: 89px;
+    outline: 2px solid red;
     background-color: #2F303A;
+    text-align: center;
+
 }
 .hero-title{
+    margin-top: 0;
+    margin-bottom: 30;
+
     color: #ffffff;
     font-weight: 900;
     font-size: 44px;
@@ -151,9 +209,12 @@ img {
 
 .features{
     background-color: var(--primary-bg-color);
+    outline: 2px solid red;
 }
 
 .features-title{
+    margin-bottom: 10px;
+
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -164,6 +225,10 @@ img {
 .features-text{
     line-height: 1.7;
 }
+
+/* works */
+
+
 /* our team  */
 
 .section-team{
