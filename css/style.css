@@ -25,18 +25,6 @@ body{
     font-size: 14px;
     letter-spacing: 0.03em;
 }
-h1,h2,h3,h4,h5,h6,ul,p{
-    margin-top: 0;
-    margin-bottom: 0;
-
-}
-.container{
-    margin-left: auto;
-    margin-right: auto;
-    width: 1230px;
-    outline: 2px solid red; 
-}
-
 img {
     display: block
 }
@@ -50,8 +38,24 @@ img {
 .link {
     text-decoration: none;
 }
+h1,h2,h3,h4,h5,h6,ul,p{
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1230px;
+    outline: 2px solid red; 
+}
+
+
 
 .logo{
+
+    margin-left: 215px;
+
     color:var(--accent-color);
     text-decoration: none;
     font-family: 'Raleway';
@@ -62,6 +66,7 @@ img {
     letter-spacing: 0.03em;
  }
 .logo-head{
+
     color: #000000;
     text-decoration: none;
     font-family: 'Raleway';
@@ -72,6 +77,8 @@ img {
     letter-spacing: 0.03em;
 }
 .logo-foot{
+  
+
     color: #ffffff;
     text-decoration: none;
     font-family: 'Raleway';
@@ -100,20 +107,26 @@ img {
 .box{
 
 display: flex;
-width: 1230px;
+width: 1600px;
 height: 80px;
 }
 
 
+
 .main-nav{
     display: flex;
+    align-items: center;
 }
 .contacts{
     display: flex;
+    align-items: center;
+    margin-left: 344px;
+   
 }
 
 
 .site-nav{
+    margin-left: 93px;
     display: flex;
 }
 
@@ -146,6 +159,7 @@ height: 80px;
 
 .auth-nav{
     display:flex;
+    
 }
 
 .auth-nav .item + .item{
@@ -170,6 +184,7 @@ height: 80px;
 
 /* hero */
 .hero{
+ 
     margin-bottom: 89px;
     outline: 2px solid red;
     background-color: #2F303A;
@@ -179,6 +194,7 @@ height: 80px;
 .hero-title{
     margin-top: 0;
     margin-bottom: 30;
+   
 
     color: #ffffff;
     font-weight: 900;
@@ -325,12 +341,29 @@ height: 80px;
 }
 
 /* footer */
-
-footer{
-    background-color: #2F303A;
+.box-footer {
+    padding-top: 20px;
+    width: 1600px;
+    height: 252px;
 }
 
+.page-footer{
+ 
+ background-color: #2F303A;
+}
+
+.footer-contacts-link{
+    margin-top: 20px;
+   
+}
+
+
+
+
 footer .link{
+    margin-left: 215px;
+   
+
     color: #757575;
     text-decoration: none;
     font-family: 'Roboto';
