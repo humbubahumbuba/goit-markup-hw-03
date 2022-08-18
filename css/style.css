@@ -62,7 +62,9 @@ ol {
 
 /* ================logo================= */
 .logo {
-  margin-left: 215px;
+  /* margin-left: 215px; */
+  display: flex;
+  align-items: center;
 
   color: var(--accent-color);
   text-decoration: none;
@@ -74,6 +76,8 @@ ol {
   letter-spacing: 0.03em;
 }
 .logo-head {
+  align-items: center;
+
   color: #000000;
   text-decoration: none;
   font-family: "Raleway";
@@ -83,16 +87,7 @@ ol {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.logo-foot {
-  color: #ffffff;
-  text-decoration: none;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
+
 /* ===============hidden h1====================== */
 .visually-hidden {
   position: absolute;
@@ -119,7 +114,7 @@ ol {
 
 .main-nav {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 .contacts {
   display: flex;
@@ -130,10 +125,7 @@ ol {
 .site-nav {
   margin-left: 93px;
   display: flex;
-}
-
-.site-nav .item:not(:last-child) {
-  margin-right: 50px;
+  column-gap: 50px;
 }
 
 .site-nav .link {
@@ -161,6 +153,8 @@ ol {
 
 .auth-nav {
   display: flex;
+  justify-content: center;
+  margin-left: auto;
 }
 
 .auth-nav .item + .item {
@@ -227,10 +221,13 @@ padding-left: 15px;
   flex-wrap: wrap;
   column-gap: 30px;
   padding-top: 89px;
+  justify-content: center;
+
   background-color: var(--primary-bg-color);
 }
 .features .item {
   flex-basis: calc((100% - 90px) / 4);
+  justify-content: center;
 }
 
 .features-title {
@@ -249,7 +246,7 @@ padding-left: 15px;
   letter-spacing: 0.3;
 }
 
-/* works */
+/* ==================works=================== */
 .section-works {
   background-color: var(--primary-bg-color);
 }
@@ -289,9 +286,21 @@ padding-left: 15px;
   flex-basis: calc((100% - 90px) / 4);
 }
 
+.main-team-title {
+  margin-bottom: 50px;
+  padding-top: 94px;
+
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03;
+}
+
 .team-title {
+  margin-top: 30px;
   margin-bottom: 10px;
-  padding-top: 30px;
 
   color: var(--title-text-color);
   font-weight: 500;
@@ -305,7 +314,7 @@ padding-left: 15px;
 
   color: var(--primary-text-color);
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -412,24 +421,44 @@ padding-left: 15px;
   margin-top: 20px;
 }
 
-/* footer */
+/* =================footer================= */
 .box-footer {
   padding-top: 20px;
-  /* width: 1600px; */
   height: 252px;
 }
 
 .page-footer {
   background-color: #2f303a;
 }
+.logo-web-foot {
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
 
+  color: var(--accent-color);
+  text-decoration: none;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo-foot {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
 .footer-contacts-link {
   margin-top: 20px;
 }
 
-footer .link {
-  margin-left: 215px;
-
+.page-footer .link {
   color: #757575;
   text-decoration: none;
   font-family: "Roboto";
@@ -439,10 +468,18 @@ footer .link {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-footer .link:hover,
-footer .link:focus {
+.page-footer .link:hover,
+.page-footer .link:focus {
   color: var(--accent-color);
 }
+
+.footer-link-mail {
+  margin-top: 9px;
+}
+.footer-link-tel {
+  margin-top: 9px;
+}
+/* span footer adress link  */
 .adress-link {
   color: rgba(255, 255, 255, 1);
   font-family: "Roboto";
