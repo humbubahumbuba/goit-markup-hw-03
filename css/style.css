@@ -347,12 +347,12 @@ padding-left: 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 30px;
 
   background-color: #ffffff;
 }
 .img-list {
   width: 370px;
-  gap: 30px;
 }
 
 .select-link {
