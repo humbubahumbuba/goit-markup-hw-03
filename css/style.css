@@ -373,6 +373,7 @@ padding-left: 15px;
 .select-menu {
   display: flex;
   justify-content: center;
+  padding-top: 94px;
 
   background-color: #ffffff;
 }
