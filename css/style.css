@@ -278,9 +278,6 @@ padding-left: 15px;
   flex-wrap: wrap;
   gap: 30px;
 }
-.works-list .item {
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
-}
 
 /*=================== our team ====================== */
 
