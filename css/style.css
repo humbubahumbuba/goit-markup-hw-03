@@ -12,6 +12,9 @@ footer #2F303A*/
   --primary-bg-color: #ffffff;
   --button-accent-color: #188ce8;
   --button-bg-color: #f5f4fa;
+  --card-set-gap: 30px;
+  --card-shadow: rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 
   /*    #EEEEEE   #ECECEC */
 }
@@ -285,14 +288,25 @@ padding-left: 15px;
   background-color: #f5f4fa;
 }
 .employee {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  padding-bottom: 94px;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
 }
 
 .employee .item {
-  flex-basis: calc((100% - 90px) / 4);
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+.card {
+  box-shadow: var(--card-shadow);
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .main-team-title {
@@ -326,46 +340,6 @@ padding-left: 15px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-}
-.team-style-first {
-  padding-right: 69px;
-  padding-left: 69px;
-  border-right: 1px solid transparent;
-  border-left: 1px solid transparent;
-  border-bottom: 1px solid transparent;
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-.team-style-second {
-  padding-right: 62px;
-  padding-left: 61px;
-  border-right: 1px solid transparent;
-  border-left: 1px solid transparent;
-  border-bottom: 1px solid transparent;
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-.team-style-third {
-  padding-right: 69px;
-  padding-left: 69px;
-  border-right: 1px solid transparent;
-  border-left: 1px solid transparent;
-  border-bottom: 1px solid transparent;
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-.team-style-fourth {
-  padding-right: 61px;
-  padding-left: 61px;
-  border-right: 1px solid transparent;
-  border-left: 1px solid transparent;
-  border-bottom: 1px solid transparent;
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* ===========portfolio select section========== */
