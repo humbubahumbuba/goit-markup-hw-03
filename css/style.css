@@ -46,14 +46,17 @@ ol {
   margin-top: 0;
   margin-bottom: 0;
 }
-
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .container {
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  /* outline: 2px solid red; */
+  outline: 2px solid red;
 }
 /* .list {
 
@@ -104,19 +107,19 @@ ol {
   clip-path: inset(50%);
   margin: -1px;
 }
+/* ======================header=================== */
 .page-header {
-  border: 1px solid #ececec;
-  margin-bottom: 5px;
+  border-bottom: 1px solid #ececec;
 }
 
 /* =====================site-nav=================== */
 
 .box {
   justify-content: space-between;
+  justify-content: center;
 
   display: flex;
   /* width: 1600px; */
-  height: 80px;
 }
 
 .main-nav {
@@ -183,14 +186,15 @@ ol {
 
 /* ==================hero================== */
 .hero {
-  height: 600px;
+  padding-bottom: 200px;
+  padding-top: 200px;
+  /* height: 600px; */
 
   /* outline: 2px solid red; */
   background-color: #2f303a;
   text-align: center;
 }
 .hero-title {
-  padding-top: 200px;
   margin-bottom: 30px;
 
   color: #ffffff;
@@ -207,6 +211,7 @@ ol {
   background-color: var(--button-accent-color);
 }
 .hero-button {
+  padding: 10px 32px;
   background-color: #2196f3;
   color: #ffffff;
   font-family: inherit;
@@ -229,9 +234,8 @@ padding-left: 15px;
 } */
 .features {
   display: flex;
-  flex-wrap: wrap;
   column-gap: 30px;
-  padding-top: 89px;
+  /* padding-top: 89px; */
   justify-content: center;
 
   background-color: var(--primary-bg-color);
@@ -271,11 +275,11 @@ padding-left: 15px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 108px;
+  /* padding-top: 108px; */
 }
 .works-list {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 30px;
 }
 
@@ -285,11 +289,8 @@ padding-left: 15px;
   background-color: #f5f4fa;
 }
 .employee {
-  padding: 0;
-  margin: 0;
-
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin-left: calc(-1 * var(--card-set-gap));
   margin-top: calc(-1 * var(--card-set-gap));
 }
@@ -300,21 +301,8 @@ padding-left: 15px;
   margin-top: var(--card-set-gap);
 }
 
-.card {
-  background-color: #ffffff;
-  border-right: 1px solid transparent;
-  border-left: 1px solid transparent;
-  border-bottom: 1px solid transparent;
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-
-  margin-bottom: 94px;
-}
-
 .main-team-title {
   margin-bottom: 50px;
-  padding-top: 94px;
 
   color: var(--title-text-color);
   font-weight: 700;
@@ -325,7 +313,6 @@ padding-left: 15px;
 }
 
 .team-title {
-  padding-top: 30px;
   margin-bottom: 10px;
 
   color: var(--title-text-color);
@@ -336,13 +323,24 @@ padding-left: 15px;
   letter-spacing: 0.03em;
 }
 .team-text {
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.team-style {
+  padding: 30px 0;
+  background-color: #ffffff;
+  /* border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid transparent; */
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* ===========portfolio select section========== */
@@ -437,17 +435,14 @@ padding-left: 15px;
 }
 
 /* =================footer================= */
-.box-footer {
-  padding-top: 20px;
-  height: 252px;
-}
 
 .page-footer {
+  padding: 60px 0;
   background-color: #2f303a;
 }
 .logo-web-foot {
-  padding-top: 60px;
-  display: flex;
+  /* padding-top: 60px; */
+  /* display: flex; */
   align-items: center;
 
   color: var(--accent-color);
@@ -469,8 +464,11 @@ padding-left: 15px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.footer-contacts-link {
+.footer-address {
   margin-top: 20px;
+}
+.footer-contacts-link .item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .page-footer .link {
@@ -488,12 +486,6 @@ padding-left: 15px;
   color: var(--accent-color);
 }
 
-.footer-link-mail {
-  margin-top: 9px;
-}
-.footer-link-tel {
-  margin-top: 9px;
-}
 /* span footer adress link  */
 .adress-link {
   color: rgba(255, 255, 255, 1);
